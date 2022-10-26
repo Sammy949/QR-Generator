@@ -9,14 +9,15 @@
 body{
   display: flex;
   padding: 0 10px;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
-  background: #3498DB;
+  background: crimson;
   justify-content: center;
+  flex-direction: column;
 }
 ::selection{
   color: #fff;
-  background: #3498DB;
+  background: crimson;
 }
 .wrapper{
   height: 265px;
@@ -66,7 +67,7 @@ header p{
   cursor: pointer;
   margin-top: 20px;
   font-size: 17px;
-  background: #3498DB;
+  background: crimson;
 }
 .qr-code{
   opacity: 0;
@@ -87,6 +88,28 @@ header p{
   width: 170px;
 }
 
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #000;
+    font-weight: 300;
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+
+.copyright a{
+  color: crimson;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+
+.copyright a:hover{
+  color: white;
+  text-decoration: underline;
+}
 @media (max-width: 430px){
   .wrapper{
     height: 255px;
